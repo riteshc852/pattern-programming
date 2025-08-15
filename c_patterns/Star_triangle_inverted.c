@@ -1,14 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    
-
-    for (int i = 4; i > 0; i--)
+    int n;
+    printf("Enter numbmer :");
+    scanf("%d",&n);
+    for (int i = n; i > 0; i--)
     {
-        printf("*");
+        for (int j = 0; j < i; j++)
+        {
+            printf("*");
+        }
         printf("\n");
     }
     
-
+    
     return 0;
 }
